@@ -1,0 +1,19 @@
+{
+  "name": "my-wallet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruan0408/my-wallet.git"
+  },
+  "author": "Ruan Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruan0408/my-wallet/issues"
+  },
+  "homepage": "https://github.com/ruan0408/my-wallet#readme"
+}
