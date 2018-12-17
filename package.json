@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ruan0408/my-wallet/issues"
   },
-  "homepage": "https://github.com/ruan0408/my-wallet#readme"
+  "homepage": "https://github.com/ruan0408/my-wallet#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
