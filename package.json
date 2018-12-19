@@ -2,9 +2,10 @@
   "name": "my-wallet",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch src src/server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,12 @@
   },
   "homepage": "https://github.com/ruan0408/my-wallet#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.16.0",
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
   }
 }
