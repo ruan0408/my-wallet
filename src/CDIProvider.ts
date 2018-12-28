@@ -11,10 +11,10 @@ export class CDIProvider {
     },
   })
 
-  async calc(value: number, cdiPercent: number, start: Date, end: Date) {
+  async getRawReturnRate(value: number, cdiPercent: number, start: Date, end: Date) {
     const startDay = moment(start).format('YYYY-MM-DD')
     const endDay = moment(end).format('YYYY-MM-DD')
-    return this.provider.get('/calculo', {
+    const res = await this.provider.get('/calculo', {
       params: {
         valor: value,
         percentual: cdiPercent,
@@ -22,7 +22,8 @@ export class CDIProvider {
         dataFim: endDay,
       },
     })
-    .then(res => res.data)
-    .catch(e => console.log(e))
+
+    const periodRateInPercentage = parseFloat(res.data.taxa)
+    return periodRateInPercentage / 100
   }
 }

@@ -10,6 +10,7 @@
     "object-literal-key-quotes": false,
     "object-literal-sort-keys": false,
     "arrow-parens": false,
+    "ordered-imports": false,
     "quotemark": [
       true,
       "single"
@@ -17,7 +18,8 @@
     "semicolon": [
       true,
       "never"
-    ]
+    ],
+    "tslint.autoFixOnSave": ["semicolon"]
   },
   "rulesDirectory": []
 }
